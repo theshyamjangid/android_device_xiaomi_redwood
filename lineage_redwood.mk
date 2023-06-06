@@ -14,6 +14,17 @@ $(call inherit-product, device/xiaomi/redwood/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#Rising Flags 
+RISING_CHIPSET := Snapdragon 778G 5G
+RISING_MAINTAINER := XscarGOD
+RISING_PACKAGE_TYPE := "VANILLA AOSP"
+TARGET_ENABLE_BLUR := true
+
+#GMS Flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
+
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
